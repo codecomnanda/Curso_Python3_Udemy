@@ -5,7 +5,7 @@ Muitas condições no mesmo if (ruim para a legibilidade)
 
 Simples é melhor que complexo
 Complexo é melhor que complicado
-'''
+
 
 velocidade = 61 # Velocidade atual do carro
 local_carro = 100 # Local onde o carro está
@@ -27,3 +27,35 @@ if carro_passou_radar_1:
 
 if carro_multado_radar_1:
     print('Carro multado no radar 1')
+'''
+
+# PROGRAMA PRA SABER SE O ALUNO FOI APROVADO OU REPROVADO
+
+'''
+# Código “confuso” (funciona, mas é difícil de ler):
+
+nota = 8
+presenca = 80
+
+if nota >= 7 and presenca > 75:
+    print("Aluno aprovado")
+else:
+    print("Aluno reprovado")
+
+'''
+
+# Código “claro” (mais fácil de ler e entender):
+
+nota = 8
+presenca = 80
+
+NOTA_MINIMA = 7
+PRESENCA_MINIMA = 75
+
+atingiu_nota = nota >= NOTA_MINIMA
+atingiu_presenca = presenca >= PRESENCA_MINIMA
+
+if atingiu_nota and atingiu_presenca:
+    print("Aluno aprovado")
+else:
+    print("Aluno reprovado")
