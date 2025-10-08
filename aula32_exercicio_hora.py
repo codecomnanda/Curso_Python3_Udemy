@@ -22,3 +22,15 @@ else:
 hora = input("Que horas são? ")
 try:
     hora = int(hora)
+except ValueError:
+    print("Por favor, digite um número inteiro válido!")
+if hora >= 0 and hora <= 11:
+    print("Bom dia!")
+elif hora >= 12 and hora <= 17:
+        print("Boa tarde!")
+elif hora >= 18 and hora <= 23:
+        print("Boa noite!")
+else:
+    print("Por favor, digite um número inteiro entre 0 e 23!")
+
+
