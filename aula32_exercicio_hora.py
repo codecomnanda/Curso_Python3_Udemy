@@ -6,7 +6,7 @@ Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 '''
 hora = input('Que horas são? ')
 if hora.isdigit(): # isdigit() -> verifica se é um número inteiro positivo
-    hora = int(hora)
+    hora = int(hora) # convertendo string para inteiro
     if hora >= 0 and hora <= 11:
         print('Bom dia!')
     elif hora >= 12 and hora <=17:
